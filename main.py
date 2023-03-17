@@ -48,7 +48,7 @@ def start(message):
 	user = db.get_user(message.chat.id)
 
 	if user["is_passed"]:
-		bot.send_message(message.from_user.id, "Вы уже прошли эту викторину. Второй раз пройти нельзя")
+		bot.send_message(message.from_user.id, "Вы уже прошли этот тест. Второй раз пройти нельзя")
 		return
 
 	if user["is_passing"]:
